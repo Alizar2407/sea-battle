@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SeaBattle.SeaBattleSceneController">
+   <children>
+      <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT">
+         <children>
+            <VBox alignment="CENTER" prefHeight="640.0" prefWidth="440.0">
+               <children>
+                  <Label fx:id="playerLabel" text="Ваше поле">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane fx:id="playerField" prefHeight="440.0" prefWidth="440.0" />
+                  <Button fx:id="randomizePositionsButton" mnemonicParsing="false" onAction="#onRandomizePositionsButtonClick" prefHeight="40.0" prefWidth="440.0" style="-fx-background-color: #42aaff;" text="Расположить случайно" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="40.0" top="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="640.0" prefWidth="440.0">
+               <children>
+                  <Label fx:id="opponentLabel" text="Поле противника">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane fx:id="opponentField" prefHeight="440.0" prefWidth="440.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Pane>
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#onPlayButtonClick" prefHeight="40.0" prefWidth="440.0" style="-fx-background-color: #42aaff;" text="Начать игру" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="40.0" top="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>
